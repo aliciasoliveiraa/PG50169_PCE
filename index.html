@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Centro de Estudos e Explicações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+      <div class="navigation w3-highway-blue w3-container">
+        <nav class="nav-container w3-padding-large">
+          <div class="logo">
+            <a href="#home" >ESTUDOS<span>MÁGICOS</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+          <div class="links">
+            <a href="#sobre" >Sobre</a>
+            <a href="#servicos" >Serviços</a>
+            <a href="#inscricoes" >Inscrições</a>
+            <a href="#contactos" >Contactos</a>            
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+            <div class="mobile-logo" style="display: inline;">
+              <a href="#home" class="logo">ESTUDOS<span>MÁGICOS</span></a>
+              <span style="width: 100%;"></span>
+              <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+            </div>
+            <a href="#sobre" onclick="toggleMobileNavigation()">Sobre nós</a>
+            <a href="#servicos" onclick="toggleMobileNavigation()">Serviços</a>
+            <a href="#inscricoes" onclick="toggleMobileNavigation()">Inscrições</a>
+            <a href="#contactos" onclick="toggleMobileNavigation()">Contactos</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">Centro de Estudos e Explicações</p>
+          <h1 class="title"> ESTUDOS<span>MÁGICOS</span></h1>
+          <p class="post-title">Vem descobrir a magia do estudo</p>
+          <a class="w3-button w3-round-large w3-indigo w3-hover-blue" href="#inscricoes">INSCRIÇÕES</a> 
+        </div>
+      </div>
+
+      <div class="about container w3-padding-large" id="sobre">
+        <div class="text-one">
+          <h2>Sobre nós</h2>
+          <p>O Centro de Estudos e Explicações ESTUDOS MÁGICOS possui uma equipa de professores/formadores dinâmicos e experientes nas diversas áreas do conhecimento, apoiando os alunos de um modo diferenciado, inovador e criativo, em que o ritmo e o modo de aprendizagem de cada aluno é respeitado.</p>
+          <p>O ESTUDOS MÁGICOS é um centro de estudos e de formação profissional localizado na freguesia de Cervães, em Vila Verde, que se diferencia pela qualidade do ensino educativo e pelo acompanhamento ao aluno.</p>
+        </div>      
+        <div class="text-one">
+          <h2>Missão, Visão e Valores</h2>
+          <p>A missão do ESTUDOS MÁGICOS é a promoção do desenvolvimento humano, através da educação e formação com recurso a métodos socio-construtivistas e técnicas pedagógicas diferenciadas.</p>
+          <p>Cada aluno é acompanhado por um tutor, sendo elaborado um plano de acompanhamento em combinação com os professores que o acompanham e eventualmente outros profissionais como a psicóloga ou a terapeuta da fala, se necessário.</p>
+          <p>Este plano é revisto periodicamente consoante a evolução do aluno, com vista ao desenvolvimento do seu máximo potencial. O ESTUDOS MÁGICOS rege-se pelos valores da Ética, Transparência, Efetividade e Competência.</p>
+        </div>
+      </div>
+
+      <div class="services container" id="servicos">
+        <h2 class="w3-center">Serviços</h2>
+        <div class="cards w3-padding-large w3-margin-top">
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>APOIO</h3>
+            <div class="card-text">
+              <p>A Estudos Mágicos presta serviços de Centro de Estudos, Explicações e Apoio Psicopedagógico a Crianças.</p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>APOIO EM GRUPO</h3>
+            <div class="card-text">
+              <p>Grupos de 1 a 4 elementos, em que alunos do mesmo ano letivo trabalham conteúdos das múltiplas disciplinas.</p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>EXPLICAÇÕES INDIVIDUAIS</h3>
+            <div class="card-text">
+              <p>Explicações individuais de matérias de disciplinas específicas.</p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>EXPLICAÇÕES EM GRUPO</h3>
+            <div class="card-text">
+              <p>Explicações em grupo, de 1 a 3 elementos, de máterias de disciplinas específicas.</p>
+            </div>
+          </div>
+          <div class="card w3-card-2 w3-padding-large w3-border w3-border-blue w3-round-large">
+            <h3>APOIO PSICOPEDAGÓGICO</h3>
+            <div class="card-text">
+              <p>Apoio psicopedagógico e acompanhamento psicológico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="careers container" id="inscricoes">
+        <h2 class="w3-center">Inscrições</h2>
+        <div class="cards w3-padding-large w3-margin-top">
+
+            <div class="card w3-card-4 w3-round-large">
+              <header class="w3-container w3-indigo">
+                 <h3>COMO SE PODE INSCREVER</h3>
+              </header>
+
+              <div class="content w3-container">
+                <div class="card-text" style="padding-bottom: 20px;">
+                <h4>Atendimento no espaço físico</h4>
+                <ul style="list-style-type: none;">
+                  <p>Atendimento personalizado no nosso centro.</p>
+                  <p>................</p>
+                </ul>
+                <h4>Atendimento online</h4>
+                <ul style="list-style-type: none;">
+                  <p>Contactando o número de telemóvel ou preenchencho o formulário com os seus dados, clicando no botão "Saber mais".</p>
+                </ul>
+              </div>
+              <footer class="w3-container" style="padding: 0">
+                <a class="w3-button w3-indigo w3-hover-blue" style="width: 100%;" href="#contactos">Saber mais</a>
+              </footer>
+            </div>
+        </div>
+      </div>
+
+      <div class="contact container" id="contactos">
+        <div class="short-contact">
+          <h2>Contactos</h2>
+          <p class="w3-xlarge">Para mais infomações:</p>
+          <div class="w3-large w3-margin-top contact-info">
+            <i class="fa fa-location-arrow"></i><span style="margin-left:10px;"><a href="https://www.google.com/maps/place/Cerv%C3%A3es/data=!4m2!3m1!1s0xd24552f63ddf573:0x6dc1460207c1d436?sa=X&ved=2ahUKEwiigvGA8Nn9AhVOU6QEHQxFBLkQ8gF6BAgIEAI" target="_blank">Cervães, Vila Verde</a></span><br>
+            <i class="fa fa-envelope-o"></i><span style="margin-left:10px;"><a href="inf@estudosmagicos.com">inf@estudosmagicos.com</a></span><br>
+            <i class="fa fa-phone"></i><span style="margin-left:10px;"><a href="+351 351 451 351">+351 351 451 351</a></span><br>
+          </div>
+        </div>
+        <div class="form w3-margin-top">
+          <div class="container w3-round-xlarge">
+            <form class="w3-highway-blue w3-padding-large w3-round-large">
+              <label for="fname">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Digite o seu nome">
+
+              <label for="lname">E-mail</label>
+              <input type="text" id="email" name="email" placeholder="Digite o seu e-mail">
+
+              <label for="subject">Conteúdo</label>
+              <textarea id="conteudo" name="conteudo" placeholder="Escreva alguma coisa.." style="height:200px"></textarea>
+              
+              <p>Ao submeter este formulário, está a concordar com a nossa <a href="privacy-policy.html" target="_blank">política de privacidade.</a></p><br>
+              <input class="w3-metro-blue" type="submit" value="Submeter">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class=" w3-highway-blue w3-padding-large" id="footer">
+        <p class="w3-center logo">© 2023 - ESTUDOS<span>MÁGICOS</span> - Todos os direitos reservados</p>
+      </div>
+
+  <script>
+    function toggleMobileNavigation() {
+      const mobileNavigation = document.getElementById("mobile-sidenav");
+      mobileNavigation.classList.toggle('mobile-links-active');
+    }
+</script>
+  </body>
+</html>
